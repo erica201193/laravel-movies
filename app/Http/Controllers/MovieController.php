@@ -55,9 +55,11 @@ class MovieController extends Controller
      * @param  \App\Movie  $movie
      * @return \Illuminate\Http\Response
      */
-    public function edit(Movie $movie)
+    public function edit($id)
     {
-        //
+        $movie = Movie::FindOrFail($id);
+
+        return view('movies.edit',['movie' => $movie]);
     }
 
     /**
