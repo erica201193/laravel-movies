@@ -28144,7 +28144,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleError: Module Error (from ./node_modules/resolve-url-loader/index.js):\nresolve-url-loader: loader misconfiguration\n  \"engine\" option is not valid\n    at Object.emitError (C:\\Users\\Luca\\boolean\\esercitazioni-progetti-laravel\\laravel-movies\\node_modules\\webpack\\lib\\NormalModule.js:173:6)\n    at handleAsError (C:\\Users\\Luca\\boolean\\esercitazioni-progetti-laravel\\laravel-movies\\node_modules\\resolve-url-loader\\index.js:214:12)\n    at Object.resolveUrlLoader (C:\\Users\\Luca\\boolean\\esercitazioni-progetti-laravel\\laravel-movies\\node_modules\\resolve-url-loader\\index.js:156:12)");
 
 /***/ }),
 
