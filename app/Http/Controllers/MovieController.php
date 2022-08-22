@@ -69,9 +69,24 @@ class MovieController extends Controller
      * @param  \App\Movie  $movie
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Movie $movie)
+    public function update(Request $request, $id)
     {
-        //
+        $movie = Movie::FindorFail($id);
+
+/*         $data = $request->validate([
+            'title' => "required|max:100",
+            'overview' => "required",
+            'thumb' => "required",
+            'rating' => "required",
+            'running_time' => "required",
+            'release_date' => "required",
+            'language' => "required",
+        ]); */
+
+        $data = $request->all();
+
+        $movie->update($data);
+        return redirect()->route('movies.show');
     }
 
     /**

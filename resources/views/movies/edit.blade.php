@@ -15,9 +15,9 @@
                         <div class="invalid-feedback"> {{$errors->first('title')}} </div>
                     </div>
                     <div class="mb-3">
-                        <label class="text-dark" for="secriptionInput" class="form-label">Description</label>
-                        <input type="text" value="{{$movie->description}}" class="form-control {{$errors->has('description') ? 'is-invalid' : ''}}" placeholder="Add Description" name="description" id="secriptionInput">
-                        <div class="invalid-feedback"> {{$errors->first('description')}} </div>
+                        <label class="text-dark" for="secriptionInput" class="form-label">overview</label>
+                        <input type="text" value="{{$movie->overview}}" class="form-control {{$errors->has('overview') ? 'is-invalid' : ''}}" placeholder="Add overview" name="description" id="secriptionInput">
+                        <div class="invalid-feedback"> {{$errors->first('overview')}} </div>
                     </div>
                     <div class="mb-3">
                         <label class="text-dark" for="linkInput" class="form-label">Link movies</label>
