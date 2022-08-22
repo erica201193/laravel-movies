@@ -10902,5 +10902,13 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  overflow: auto;
 }
 
